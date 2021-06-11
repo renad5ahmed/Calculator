@@ -1,0 +1,49 @@
+<html>
+<title> My Calculator </title>
+
+<script src="script.js"></script> <!-- Include the JavaScript file-->
+
+<head> <link rel="stylesheet" href="myStyle.css"></head> <!-- Include the CSS file-->
+<body>
+<h1> Welcome To Renad's Calculator </h1>
+<table border="6">
+
+  <tr>
+    <th colspan="4"> <input type="text" id="data"/> </th>
+  </tr>
+
+  <tr>
+    <td> <input type="button" id="b" value="1" onclick="display('1')"/> </td>
+    <td> <input type="button" id="b" value="2" onclick="display('2')"/> </td>
+    <td> <input type="button" id="b" value="3" onclick="display('3')"/> </td>
+    <td> <input type="button" id="b" value="+" onclick="display('+')"/> </td>
+  </tr>
+
+  <tr>
+    <td> <input type="button" id="b" value="4" onclick="display('4')"/> </td>
+    <td> <input type="button" id="b" value="5" onclick="display('5')"/> </td>
+    <td> <input type="button" id="b" value="6" onclick="display('6')"/> </td>
+    <td> <input type="button" id="b" value="-" onclick="display('-')"/> </td>
+  </tr>
+
+  <tr>
+    <td> <input type="button" id="b" value="7" onclick="display('7')"/> </td>
+    <td> <input type="button" id="b" value="8" onclick="display('8')"/> </td>
+    <td> <input type="button" id="b" value="9" onclick="display('9')"/> </td>
+    <td> <input type="button" id="b" value="*" onclick="display('*')"/> </td>
+  </tr>
+
+  <tr>
+    <td> <input type="button" id="b" value="/" onclick="display('/')"/> </td>
+    <td> <input type="button" id="b" value="0" onclick="display('0')"/> </td>
+    <td> <input type="button" id="b" value="." onclick="display('.')"/> </td>
+    <td> <input type="button" id="b" value="=" onclick="getResult() "/> </td>
+  </tr>
+
+  <tr>
+    <th colspan="4"> <input type="button" id="b" value="Clear All" onclick="clearAll()"/> </th> <!-- function to clear displayed data-->
+  </tr>
+  
+</table>
+</body>
+</html>
